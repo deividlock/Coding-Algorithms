@@ -4,11 +4,12 @@
  * @param int $n the stop
  * @return array $data the fibonacci sequence array
  */
-function generateSequnce($n) {
+function generateSequnce($n)
+{
     $data = [0,1];
     $i = 2;
     while($i <= $n) {
-        $data[$i] = $data[$i-1] + $data[$i-2];
+        $data[$i] = $data[$i - 1] + $data[$i - 2];
         ++$i;
     }
     return $data;
